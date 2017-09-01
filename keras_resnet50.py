@@ -1,10 +1,13 @@
-#!
+#!usr/bin/env python
+# -*- coding:utf-8 -*-
+
 # Reference: http://blog.csdn.net/wangli0519/article/details/72954155
 
 from keras.applications.resnet50 import ResNet50
 from keras.preprocessing import image
 from keras.applications.resnet50 import preprocess_input, decode_predictions
 import numpy as np 
+
 
 model = ResNet50(include_top=True, weights='imagenet', input_tensor=None, input_shape=None, pooling=None, classes=1000)
 
